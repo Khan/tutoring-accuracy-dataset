@@ -85,7 +85,7 @@
             },
             {
                 "role": "user",
-                "content": ".100"
+                "content": "100"
             }
         ],
         "test_id": 1
@@ -512,7 +512,7 @@
         "test_id": 8
     },
     {
-        "expected_result": "Answer Accepted",
+        "expected_result": "Answer Not Accepted",
         "math_level": "Algebra",
         "data": [
             {
@@ -1832,7 +1832,7 @@
         "test_id": 32
     },
     {
-        "expected_result": "Answer Not Accepted",
+        "expected_result": "Answer Accepted",
         "math_level": "Geometry",
         "data": [
             {
@@ -1853,7 +1853,7 @@
             },
             {
                 "role": "user",
-                "content": "90 - 90-x"
+                "content": "90 - (90-x)"
             }
         ],
         "test_id": 33
@@ -1977,7 +1977,7 @@
         "test_id": 35
     },
     {
-        "expected_result": "Answer Accepted",
+        "expected_result": "Answer Not Accepted",
         "math_level": "Elementary",
         "data": [
             {
@@ -3262,7 +3262,7 @@
         "test_id": 66
     },
     {
-        "expected_result": "Answer Not Accepted",
+        "expected_result": "Answer Accepted",
         "math_level": "Trigonometry",
         "data": [
             {
@@ -3622,7 +3622,7 @@
         "test_id": 74
     },
     {
-        "expected_result": "Answer Not Accepted",
+        "expected_result": "Answer Accepted",
         "math_level": "Trigonometry",
         "data": [
             {
@@ -3687,14 +3687,6 @@
             {
                 "role": "user",
                 "content": "(x + 2)(x - 2)"
-            },
-            {
-                "role": "assistant",
-                "content": "Perfect! You've factored \\(x^2 - 4\\) correctly as \\((x + 2)(x - 2)\\). \n\nNow, let's return to our original equation. Can you identify the common denominator now?"
-            },
-            {
-                "role": "user",
-                "content": "(x+2)(x-2)"
             }
         ],
         "test_id": 76
@@ -5889,7 +5881,7 @@
             },
             {
                 "role": "user",
-                "content": "In fractions or decimals?"
+                "content": "9"
             }
         ],
         "test_id": 117
@@ -6166,7 +6158,7 @@
         "test_id": 122
     },
     {
-        "expected_result": "Answer Accepted",
+        "expected_result": "Answer Not Accepted",
         "math_level": "Elementary",
         "data": [
             {
@@ -6709,11 +6701,11 @@
             },
             {
                 "role": "assistant",
-                "content": "Excellent! Now, let's consider the kind of series we have here. It's alternating due to the \\((-1)^n\\) component. Do you recall the criteria for an alternating series to converge?"
+                "content": "Excellent! Now, let's consider the kind of series we have here. It's alternating due to the \\((-1)^n\\) component. What does n represent in this series, and what values can it take?"
             },
             {
                 "role": "user",
-                "content": "did I place my parenthesis correctly?"
+                "content": "any real number"
             }
         ],
         "test_id": 133
@@ -7546,7 +7538,7 @@
             },
             {
                 "role": "user",
-                "content": "It's 2^2x"
+                "content": "It's (2^x)^2"
             }
         ],
         "test_id": 152
@@ -7595,7 +7587,7 @@
         "test_id": 153
     },
     {
-        "expected_result": "Answer Not Accepted",
+        "expected_result": "Answer Accepted",
         "math_level": "Elementary",
         "data": [
             {
@@ -7966,7 +7958,7 @@
         "test_id": 162
     },
     {
-        "expected_result": "Answer Not Accepted",
+        "expected_result": "Answer Accepted",
         "math_level": "Trigonometry",
         "data": [
             {
@@ -8457,15 +8449,15 @@
         "data": [
             {
                 "role": "user",
-                "content": "Given the function f(x) = \u22122[x] + 8, can you determine the value of f(\u22121.8)?\r\n\r\n4\r\n6\r\n10\r\n12"
+                "content": "Given the function f(x) = -2[x] + 8, where [x] represents the floor function (greatest integer less than or equal to x), can you determine the value of f(-1.8)?\r\n\r\n4\r\n6\r\n10\r\n12"
             },
             {
                 "role": "assistant",
-                "content": "Sure, let's work through this! To start, are you familiar with the meaning of the brackets around \\(x\\) in this equation?"
+                "content": "I see. Let's break this down step by step. First, can you tell me what the floor function of -1.8 is?"
             },
             {
                 "role": "user",
-                "content": "it represents a ceiling function"
+                "content": "-2"
             }
         ],
         "test_id": 173
@@ -8516,7 +8508,7 @@
             },
             {
                 "role": "user",
-                "content": "But that would only cause Y to increase."
+                "content": "1/5"
             }
         ],
         "test_id": 174
