@@ -85,7 +85,7 @@
             },
             {
                 "role": "user",
-                "content": ".100"
+                "content": "100"
             }
         ],
         "test_id": 1
